@@ -84,3 +84,10 @@ Vary: Accept
 * Для вывода 10ти постов с пропуском 15ти, отсортированных по заголовку запрос будет выглядеть так:
   
     ``` posts/?ordering=title&limit=10&offset=15 ```
+
+## Для запуска приложения на Localhost выполнить следующие команды:
+Start Django: ```python manage.py runserver```
+Start RabbitMQ: ```sudo rabbitmq-server```
+Start Celery worker: ```celery -A proj worker -l info```
+Start Celery Beat: ```celery -A proj beat -l INFO```
+Start Flower: ```flower -A proj --port=5555```
