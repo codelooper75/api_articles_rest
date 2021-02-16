@@ -87,7 +87,11 @@ Vary: Accept
 
 ## Для запуска приложения на Localhost выполнить следующие команды:
 Start Django: ```python manage.py runserver```
+
 Start RabbitMQ: ```sudo rabbitmq-server```
+
 Start Celery worker: ```celery -A proj worker -l info```
+
 Start Celery Beat: ```celery -A proj beat -l INFO```
+
 Start Flower: ```flower -A proj --port=5555```
